@@ -9,6 +9,9 @@ mySubmit.onclick = function() {
 
 // TODO: Get the number from the form input
     num = myText.value;
+    if (num === "") {
+        num = undefined;
+    }
     num = Number(num);
 
 // TODO: Write FizzBuzz logic here
